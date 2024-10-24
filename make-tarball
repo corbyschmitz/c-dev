@@ -11,7 +11,7 @@ fi
 autoconf
 
 PWDSAVE=`pwd`
-PACKAGE=class-code
+PACKAGE=c-dev
 pushd ..
 if [ ! -d $PACKAGE-$1 ]; then
  ln -s `basename $PWDSAVE` $PACKAGE-$1

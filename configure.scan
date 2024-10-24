@@ -41,7 +41,7 @@ AC_CONFIG_FILES([01-helloworld/makefile
                  12-time/makefile
                  13-structure/makefile
                  14-process/makefile
-                 15-thread/Makefile
+                 15-thread/makefile
                  15-thread/makefile
                  16-sharedmem/makefile
                  17-semaphore/makefile

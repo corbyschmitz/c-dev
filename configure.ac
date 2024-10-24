@@ -1,12 +1,12 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ(2.61)
-AC_INIT(class-code, 1.0, cschmit@cs.luc.edu)
+AC_PREREQ([2.71])
+AC_INIT(@PACKAGE_NAME@,@PACKAGE_VERSION@,[cschmit@luc.edu])
 AC_CONFIG_AUX_DIR(admin)
-AM_INIT_AUTOMAKE(@PACKAGE_NAME@, @PACKAGE_VERSION@)
+AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([01-helloworld/helloWorld.c])
-AC_CONFIG_HEADER([config.h])
+AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
@@ -15,8 +15,6 @@ AC_PROG_CC
 # FIXME: Replace `main' with a function in `-lpthread':
 AC_CHECK_LIB([pthread], [main])
 
-# Checks for header files.
-AC_HEADER_STDC
 AC_CHECK_HEADERS([stdlib.h unistd.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
@@ -42,7 +40,6 @@ AC_CONFIG_FILES([01-helloworld/makefile
                  12-time/makefile
                  13-structure/makefile
                  14-process/makefile
-                 15-thread/Makefile
                  15-thread/makefile
                  16-sharedmem/makefile
                  17-semaphore/makefile

@@ -1,12 +1,1 @@
-Installation Instructions (2.x release)
- Download the software from the Downloads tab in the project web presence
- Un-tar it using TAR
-        tar -xzf class-code-1.0.tar.gz 
- Change to the project directory
-        cd class-code-2.0 
- Run the configure script -h will show you the build and install options
-        ./configure 
- Make the code
-        make 
- Install the code (in /usr/local/ if you didn't adjust --prefix=DIR
-        make install 
+/usr/share/automake-1.16/INSTALL
