@@ -1,2 +1,6 @@
 autom4te.cache/
 autom4te.cache/*
+*/makefile
+*/.deps/
+config.log
+stamp-h1
