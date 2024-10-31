@@ -1,5 +1,6 @@
 #include <time.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /*    Copyright (C) 2007 Corby Schmitz
 * 
@@ -10,7 +11,7 @@
 gives us the current time broken into the appropriate portions  
 See the method that follows:
 */
-printDate(){
+void printDate(){
 	//create the structure which will hold current time
 	time_t pt;
 	//create the structure that will hold the broken down time info
@@ -73,6 +74,6 @@ strftime variables
     %Z    time zone name, if any (EST)
     %%    percent character %
 */
-main(){
+void main(){
 	printDate();
 }

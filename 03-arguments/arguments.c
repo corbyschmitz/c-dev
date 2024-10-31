@@ -6,13 +6,13 @@
 */
 
 // Function call which takes argument and uses it
-printStmt(char arg[]){
+void printStmt(char arg[]){
 	int blah = 5;
 	printf("%d %s\n", blah, arg); //non-static content print statement, numberic and string
 }
 
 //Main function call which calls subroutines
-main(){
+void main(){
 	printStmt("Hello to the World");
 }
 

@@ -7,7 +7,7 @@
 *    License removed for readablity
 */
 
-main(){
+void main(){
         pid_t process_id;
         process_id=fork();
         if(process_id==0){

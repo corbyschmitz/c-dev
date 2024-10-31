@@ -12,7 +12,7 @@
 *    License removed for readablity
 */
 
-main () {
+void main () {
 	int temp1,shareid;
 	int *array, *parray, *carray;
 	pid_t process_id;

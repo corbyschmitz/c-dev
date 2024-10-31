@@ -64,7 +64,7 @@ void update_foo(){
 	sleep(1);
 }
 
-main(){
+void main(){
         //declare variables;
         int nop=0;
         //declare threads

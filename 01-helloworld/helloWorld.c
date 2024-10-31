@@ -6,7 +6,7 @@
 */
 
 // Simple Hello-world application
-main(){
+void main(){
 	printf("Good Morning to you\n"); // Print static string
 }
 

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*    Copyright (C) 2007 Corby Schmitz
 * 
@@ -31,17 +32,17 @@ int modulo (int foo, int bar){
 }
 
 //print out calculation values
-screenOut(int value){
+void screenOut(int value){
 	printf("%d\n",value);
 }
 
 //print out output header details on the operation to be done
-headerOut(int foo, char op, int bar){
+void headerOut(int foo, char op, int bar){
 	printf("%d %c %d\n", foo, op, bar);
 }
 
 //Arithmetic operations
-main(){
+void main(){
 	int op1 = 10;
 	int op2 = 5;
 	int result;

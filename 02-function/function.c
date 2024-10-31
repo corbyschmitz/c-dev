@@ -6,7 +6,7 @@
 */
 
 // Function for printing hello statement
-printStmt(){
+void printStmt(){
 	printf("Hello to the World\n");
 }
 

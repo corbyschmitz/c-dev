@@ -1,5 +1,5 @@
 #include "function.h"
 
-main(){
+void main(){
 	printStmt();
 }

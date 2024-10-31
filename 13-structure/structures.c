@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #define LLIMIT 20
 #define SLIMIT 5
 
@@ -15,14 +18,14 @@ typedef struct{
 	char suffix[SLIMIT];
 } myName;
 
-getInput(char prompt[], int bytes, char* inputString){
+void getInput(char prompt[], int bytes, char* inputString){
 	printf("%s (maximum of %d characters): ",prompt,bytes);
 	fgets(inputString, bytes, stdin);
 	inputString[strlen(inputString)-1] = '\0';
 }
 
 
-main(){
+void main(){
 	myName me;
 	getInput("Enter your preferred salutation", SLIMIT, me.salutation);
 	getInput("Enter your first name", LLIMIT, me.first);

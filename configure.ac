@@ -2,30 +2,31 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.71])
-AC_INIT(@PACKAGE_NAME@,@PACKAGE_VERSION@,[cschmit@luc.edu])
+AC_INIT([@PACKAGE_NAME@],[@PACKAGE_VERSION@],[cschmit@luc.edu])
 AC_CONFIG_AUX_DIR(admin)
 AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([01-helloworld/helloWorld.c])
+#AC_CONFIG_SRCDIR([01-helloworld/helloWorld.c])
 AC_CONFIG_HEADERS([config.h])
 
-# Checks for programs.
+# Checks for programs used for compilation.
 AC_PROG_CC
 
-# Checks for libraries.
-# FIXME: Replace `main' with a function in `-lpthread':
+# Checks for libraries to support threads.
 AC_CHECK_LIB([pthread], [main])
 
 AC_CHECK_HEADERS([stdlib.h unistd.h])
 
-# Checks for typedefs, structures, and compiler characteristics.
+# Checks for typedefs, structures, and compiler characteristics
+# that support threads.
 AC_C_CONST
 AC_TYPE_PID_T
 AC_STRUCT_TM
 
-# Checks for library functions.
+# Checks for library functions for process creation and time.
 AC_FUNC_FORK
 AC_FUNC_STRFTIME
 
+# List of all the local makefiles to create
 AC_CONFIG_FILES([01-helloworld/makefile
                  02-function/makefile
                  03-arguments/makefile

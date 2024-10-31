@@ -1,11 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*    Copyright (C) 2007 Corby Schmitz
 * 
 *    License removed for readablity
 */
 
-main(int argc, char* argv[]){
+void main(int argc, char* argv[]){
+	if (argc < 2) {
+		printf("Choose a number between 1 and 3\n");
+		exit(0);
+	}
 	int input = atoi(argv[1]);
 	if (input == 1){
 		printf("Chose 1\n");

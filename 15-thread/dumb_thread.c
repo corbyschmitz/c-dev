@@ -17,7 +17,7 @@ void* thread_routine1(int* f){
         }
 }
 
-main(){
+void main(){
         pthread_t tid1;
         pthread_t tid2;
 	pthread_t tid3;

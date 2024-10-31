@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define SIZE 50
 
 /*    Copyright (C) 2007 Corby Schmitz
@@ -14,7 +15,7 @@ getInput(char prompt[], int bytes, char* inputString){
 
 
 //Command Line Input
-main(){
+void main(){
 	//int SIZE = 50;
 	char* userName[SIZE];
 	getInput("Enter your full Name", SIZE, userName);

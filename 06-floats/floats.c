@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*    Copyright (C) 2007 Corby Schmitz
 * 
@@ -21,16 +22,16 @@ float division (float foo, float bar){
 	return foo / bar;
 }
 
-screenOut(float value){
+void screenOut(float value){
 	printf("%.1f\n",value);
 }
 
-headerOut(float foo, char op, float bar){
+void headerOut(float foo, char op, float bar){
 	printf("%.1f %c %.1f\n", foo, op, bar);
 }
 
 //Arithmetic operations
-main(){
+void main(){
 	float op1 = 10.5;
 	float op2 = 5.7;
 	float result;

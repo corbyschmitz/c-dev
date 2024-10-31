@@ -615,7 +615,6 @@ PACKAGE_STRING='@PACKAGE_NAME@ @PACKAGE_VERSION@'
 PACKAGE_BUGREPORT='cschmit@luc.edu'
 PACKAGE_URL=''
 
-ac_unique_file="01-helloworld/helloWorld.c"
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stddef.h>
@@ -3153,11 +3152,11 @@ END
   fi
 fi
 
-
+#AC_CONFIG_SRCDIR([01-helloworld/helloWorld.c])
 ac_config_headers="$ac_config_headers config.h"
 
 
-# Checks for programs.
+# Checks for programs used for compilation.
 
 
 
@@ -4408,8 +4407,7 @@ fi
 
 
 
-# Checks for libraries.
-# FIXME: Replace `main' with a function in `-lpthread':
+# Checks for libraries to support threads.
 
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for main in -lpthread" >&5
 printf %s "checking for main in -lpthread... " >&6; }
@@ -4495,7 +4493,8 @@ then :
 fi
 
 
-# Checks for typedefs, structures, and compiler characteristics.
+# Checks for typedefs, structures, and compiler characteristics
+# that support threads.
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for an ANSI C-conforming const" >&5
 printf %s "checking for an ANSI C-conforming const... " >&6; }
 if test ${ac_cv_c_const+y}
@@ -4654,7 +4653,7 @@ printf "%s\n" "#define TM_IN_SYS_TIME 1" >>confdefs.h
 fi
 
 
-# Checks for library functions.
+# Checks for library functions for process creation and time.
 
 ac_func=
 for ac_item in $ac_func_c_list
@@ -4939,6 +4938,7 @@ fi
 
 done
 
+# List of all the local makefiles to create
 ac_config_files="$ac_config_files 01-helloworld/makefile 02-function/makefile 03-arguments/makefile 04-user-input/makefile 05-integers/makefile 06-floats/makefile 07-advanced-input/makefile 08-cli-arguments/makefile 09-files/makefile 10-loops/makefile 11-conditions/makefile 12-time/makefile 13-structure/makefile 14-process/makefile 15-thread/makefile 16-sharedmem/makefile 17-semaphore/makefile makefile"
 
 cat >confcache <<\_ACEOF

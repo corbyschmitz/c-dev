@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/sem.h>
@@ -56,7 +57,7 @@ union semunion {
 	ushort *array;
 } initial_value;
 
-main(){
+int main(){
     // semaphore declaration
 	int mutexid;    // controls access to critical region   
 	int emptyid;    // counts empty buffer slots

@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-printStmt(char arg[]){
+void printStmt(char arg[]){
 	arg[strlen(arg)-1]='\0';
 	printf("Hello %s\n", arg);
 }
-main(){
+void main(){
 	int MAX_SIZE = 15;
 	char inputString[MAX_SIZE];
 	char more[20];
