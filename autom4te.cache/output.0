@@ -3152,7 +3152,6 @@ END
   fi
 fi
 
-#AC_CONFIG_SRCDIR([01-helloworld/helloWorld.c])
 ac_config_headers="$ac_config_headers config.h"
 
 
@@ -4939,7 +4938,7 @@ fi
 done
 
 # List of all the local makefiles to create
-ac_config_files="$ac_config_files 01-helloworld/makefile 02-function/makefile 03-arguments/makefile 04-user-input/makefile 05-integers/makefile 06-floats/makefile 07-advanced-input/makefile 08-cli-arguments/makefile 09-files/makefile 10-loops/makefile 11-conditions/makefile 12-time/makefile 13-structure/makefile 14-process/makefile 15-thread/makefile 16-sharedmem/makefile 17-semaphore/makefile makefile"
+ac_config_files="$ac_config_files src/01-helloworld/Makefile src/02-function/Makefile src/03-arguments/Makefile src/04-user-input/Makefile src/05-integers/Makefile src/06-floats/Makefile src/07-advanced-input/Makefile src/08-cli-arguments/Makefile src/09-files/Makefile src/10-loops/Makefile src/11-conditions/Makefile src/12-time/Makefile src/13-structure/Makefile src/14-process/Makefile src/15-thread/Makefile src/16-sharedmem/Makefile src/17-semaphore/Makefile src/Makefile Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -5663,24 +5662,25 @@ do
   case $ac_config_target in
     "config.h") CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
-    "01-helloworld/makefile") CONFIG_FILES="$CONFIG_FILES 01-helloworld/makefile" ;;
-    "02-function/makefile") CONFIG_FILES="$CONFIG_FILES 02-function/makefile" ;;
-    "03-arguments/makefile") CONFIG_FILES="$CONFIG_FILES 03-arguments/makefile" ;;
-    "04-user-input/makefile") CONFIG_FILES="$CONFIG_FILES 04-user-input/makefile" ;;
-    "05-integers/makefile") CONFIG_FILES="$CONFIG_FILES 05-integers/makefile" ;;
-    "06-floats/makefile") CONFIG_FILES="$CONFIG_FILES 06-floats/makefile" ;;
-    "07-advanced-input/makefile") CONFIG_FILES="$CONFIG_FILES 07-advanced-input/makefile" ;;
-    "08-cli-arguments/makefile") CONFIG_FILES="$CONFIG_FILES 08-cli-arguments/makefile" ;;
-    "09-files/makefile") CONFIG_FILES="$CONFIG_FILES 09-files/makefile" ;;
-    "10-loops/makefile") CONFIG_FILES="$CONFIG_FILES 10-loops/makefile" ;;
-    "11-conditions/makefile") CONFIG_FILES="$CONFIG_FILES 11-conditions/makefile" ;;
-    "12-time/makefile") CONFIG_FILES="$CONFIG_FILES 12-time/makefile" ;;
-    "13-structure/makefile") CONFIG_FILES="$CONFIG_FILES 13-structure/makefile" ;;
-    "14-process/makefile") CONFIG_FILES="$CONFIG_FILES 14-process/makefile" ;;
-    "15-thread/makefile") CONFIG_FILES="$CONFIG_FILES 15-thread/makefile" ;;
-    "16-sharedmem/makefile") CONFIG_FILES="$CONFIG_FILES 16-sharedmem/makefile" ;;
-    "17-semaphore/makefile") CONFIG_FILES="$CONFIG_FILES 17-semaphore/makefile" ;;
-    "makefile") CONFIG_FILES="$CONFIG_FILES makefile" ;;
+    "src/01-helloworld/Makefile") CONFIG_FILES="$CONFIG_FILES src/01-helloworld/Makefile" ;;
+    "src/02-function/Makefile") CONFIG_FILES="$CONFIG_FILES src/02-function/Makefile" ;;
+    "src/03-arguments/Makefile") CONFIG_FILES="$CONFIG_FILES src/03-arguments/Makefile" ;;
+    "src/04-user-input/Makefile") CONFIG_FILES="$CONFIG_FILES src/04-user-input/Makefile" ;;
+    "src/05-integers/Makefile") CONFIG_FILES="$CONFIG_FILES src/05-integers/Makefile" ;;
+    "src/06-floats/Makefile") CONFIG_FILES="$CONFIG_FILES src/06-floats/Makefile" ;;
+    "src/07-advanced-input/Makefile") CONFIG_FILES="$CONFIG_FILES src/07-advanced-input/Makefile" ;;
+    "src/08-cli-arguments/Makefile") CONFIG_FILES="$CONFIG_FILES src/08-cli-arguments/Makefile" ;;
+    "src/09-files/Makefile") CONFIG_FILES="$CONFIG_FILES src/09-files/Makefile" ;;
+    "src/10-loops/Makefile") CONFIG_FILES="$CONFIG_FILES src/10-loops/Makefile" ;;
+    "src/11-conditions/Makefile") CONFIG_FILES="$CONFIG_FILES src/11-conditions/Makefile" ;;
+    "src/12-time/Makefile") CONFIG_FILES="$CONFIG_FILES src/12-time/Makefile" ;;
+    "src/13-structure/Makefile") CONFIG_FILES="$CONFIG_FILES src/13-structure/Makefile" ;;
+    "src/14-process/Makefile") CONFIG_FILES="$CONFIG_FILES src/14-process/Makefile" ;;
+    "src/15-thread/Makefile") CONFIG_FILES="$CONFIG_FILES src/15-thread/Makefile" ;;
+    "src/16-sharedmem/Makefile") CONFIG_FILES="$CONFIG_FILES src/16-sharedmem/Makefile" ;;
+    "src/17-semaphore/Makefile") CONFIG_FILES="$CONFIG_FILES src/17-semaphore/Makefile" ;;
+    "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
+    "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac

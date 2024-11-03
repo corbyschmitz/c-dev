@@ -4,8 +4,7 @@
 AC_PREREQ([2.71])
 AC_INIT([@PACKAGE_NAME@],[@PACKAGE_VERSION@],[cschmit@luc.edu])
 AC_CONFIG_AUX_DIR(admin)
-AM_INIT_AUTOMAKE
-#AC_CONFIG_SRCDIR([01-helloworld/helloWorld.c])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs used for compilation.
@@ -27,22 +26,23 @@ AC_FUNC_FORK
 AC_FUNC_STRFTIME
 
 # List of all the local makefiles to create
-AC_CONFIG_FILES([01-helloworld/makefile
-                 02-function/makefile
-                 03-arguments/makefile
-                 04-user-input/makefile
-                 05-integers/makefile
-                 06-floats/makefile
-                 07-advanced-input/makefile
-                 08-cli-arguments/makefile
-                 09-files/makefile
-                 10-loops/makefile
-                 11-conditions/makefile
-                 12-time/makefile
-                 13-structure/makefile
-                 14-process/makefile
-                 15-thread/makefile
-                 16-sharedmem/makefile
-                 17-semaphore/makefile
-                 makefile])
+AC_CONFIG_FILES([src/01-helloworld/Makefile
+                 src/02-function/Makefile
+                 src/03-arguments/Makefile
+                 src/04-user-input/Makefile
+                 src/05-integers/Makefile
+                 src/06-floats/Makefile
+                 src/07-advanced-input/Makefile
+                 src/08-cli-arguments/Makefile
+                 src/09-files/Makefile
+                 src/10-loops/Makefile
+                 src/11-conditions/Makefile
+                 src/12-time/Makefile
+                 src/13-structure/Makefile
+                 src/14-process/Makefile
+                 src/15-thread/Makefile
+                 src/16-sharedmem/Makefile
+                 src/17-semaphore/Makefile
+                 src/Makefile
+		 Makefile])
 AC_OUTPUT
