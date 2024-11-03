@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 if [ "x$1" = "x" ]
 then
  echo "Usage: $0 <release number>"
@@ -17,5 +17,5 @@ if [ ! -d $PACKAGE-$1 ]; then
  ln -s `basename $PWDSAVE` $PACKAGE-$1
 fi
 tar zhcvf $PACKAGE-$1.tar.gz  --exclude admin --exclude *~ $PACKAGE-$1
-#rm $PACKAGE-$1
+# rm $PACKAGE-$1
 popd
