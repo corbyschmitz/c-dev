@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.71])
 AC_INIT([@PACKAGE_NAME@],[@PACKAGE_VERSION@],[cschmit@luc.edu])
-AC_CONFIG_AUX_DIR(admin)
+# AC_CONFIG_AUX_DIR(admin)
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_HEADERS([config.h])
 
